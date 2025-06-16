@@ -1,0 +1,228 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Cultura - Servicios Públicos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.4em;
+            opacity: 0.9;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 0 2rem 0;
+            background-color: #ffffff;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .carrusel {
+            overflow: hidden;
+            border-radius: 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            position: relative;
+            max-height: 60vh;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.8s ease-in-out;
+            animation: slideAnimation 15s infinite alternate;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 0;
+            object-fit: cover;
+        }
+
+        @keyframes slideAnimation {
+            0%, 20% { transform: translateX(0); }
+            25%, 45% { transform: translateX(-100%); }
+            50%, 70% { transform: translateX(-200%); }
+            75%, 100% { transform: translateX(-300%); }
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 1.8rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        section:first-of-type {
+            padding-top: 2rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        .descripcion p,
+        .horarios p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .tareas ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tareas li {
+            padding: 0.6rem 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 1.05em;
+            color: #444;
+            display: flex;
+            align-items: center;
+        }
+
+        .tareas li:last-child {
+            border-bottom: none;
+        }
+
+        .tareas li::before {
+            content: '✅';
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .horarios strong {
+            color: #3498db;
+        }
+
+        .creditos {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            background-color: #f9f9f9;
+            border-left: none;
+            box-shadow: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .creditos p {
+            margin: 0.5rem 0;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .creditos strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Casa de Cultura</h1>
+        <p>Gestión y actualización de servicios públicos comunitarios</p>
+    </div>
+
+    <div class="carrusel">
+        <div class="slider">
+             <img src="tigr.jpg" alt="gato">
+            <img src="exel.jpg" alt="humano">
+            <img src="prac.jpg" alt="practice">
+            <img src="b.jpg" alt="b">
+            <img src="compu.jpg" alt="compu">
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="descripcion">
+            <h2>Descripción</h2>
+            <p>El presente sitio describe las actividades realizadas en la Casa de Cultura, enfocadas en la <strong>actualización de datos de inhumaciones</strong> como parte del servicio público que ofrecemos para el bienestar y orden de nuestra comunidad.</p>
+            <p>Estas labores garantizan un manejo adecuado, organizado y respetuoso del cementerio local, permitiendo mantener registros claros y actualizados para los usuarios y autoridades municipales.</p>
+        </section>
+
+        <section class="tareas">
+            <h2>Actividades Realizadas</h2>
+            <ul>
+                <li>Registro de pagos por inhumación en una tabla de Excel.</li>
+                <li>Organización del cementerio en seis secciones para facilitar la gestión.</li>
+                <li>Verificación de boletas de pago con datos del contribuyente.</li>
+                <li>Elaboración y mantenimiento de calendarios con fechas clave.</li>
+                <li>Actualización semanal de registros y seguimiento de pagos vencidos.</li>
+            </ul>
+        </section>
+
+        <section class="horarios">
+            <h2>Horarios de Atención</h2>
+            <p><strong>Martes:</strong> 12:00pm - 4:30pm</p>
+            <p><strong>Jueves:</strong> 11:00am - 4:30pm</p>
+        </section>
+
+        <section class="descripcion">
+            <h2>Importancia en los Servicios Públicos</h2>
+            <p>La gestión del cementerio y la actualización de datos forman parte esencial de los <strong>servicios públicos municipales</strong>. Este trabajo contribuye a la legalidad, dignidad y respeto por los espacios comunes, brindando transparencia a la población.</p>
+        </section>
+
+        <section class="creditos">
+            <p>Creado por <strong>Brenda Jasmin Mariano Palma</strong></p>
+            <p>Grupo: <strong>403</strong></p>
+            <p><a href="#">🔗 Acceder a documentos</a></p>
+        </section>
+    </div>
+</body>
+</html>
+ 
+ 
+ 
+ 
+<img src="tigr.jpg" alt="gato">
+            <img src="exel.jpg" alt="humano">
+            <img src="prac.jpg" alt="practice">
+            <img src="b.jpg" alt="b">
+            <img src="compu.jpg" alt="compu">
